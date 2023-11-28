@@ -59,8 +59,9 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt="name logo" className="w-9 h-9 object-contain" />
-          <p className="text-white text-[18px] font-bold cursor-pointer">
-            Mitul Saha | Software Engineer
+          <p className="text-white text-[18px] font-bold cursor-pointer flex">
+            Mitul Saha &nbsp;
+            <span className="sm:block hidden"></span>| Software Engineer
           </p>
         </Link>
         { renderNavLinks(active, setActive) }
