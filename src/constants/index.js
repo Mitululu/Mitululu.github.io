@@ -46,17 +46,17 @@ import {
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "Application Developer",
       icon: mobile,
     },
     {
-      title: "Backend Developer",
+      title: "Back-End Software Engineer",
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "Full-Stack Software Engineer",
       icon: creator,
-    },
+    }
   ];
   
   const technologies = [

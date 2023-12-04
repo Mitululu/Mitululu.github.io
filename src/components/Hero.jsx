@@ -13,11 +13,11 @@ const Hero = () => {
         </div>
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-          Hi, I'm <span className="text-[#915eff]">Mitul</span>
+          Hi, I&apos;m <span className="text-[#915eff]"> Mitul</span>
           </h1>
           <p className={`${styles.heroSubText} met-2 text-white-100`}>
             Welcome to my website! <br />
-            I develop web applications and APIs
+            I develop user-friendly software
           </p>
         </div>
       </div>
@@ -37,4 +37,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default Hero;

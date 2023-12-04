@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 import { Suspense, useEffect, useState } from 'react';
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
@@ -13,7 +14,7 @@ const Computers = ( isMobile ) => {
       <pointLight intensity={1} />
       <primitive object={computer.scene} /> */}
 
-      <hemisphereLight />
+      <hemisphereLight groundColor='black' />
       <pointLight />
       <spotLight />
       <primitive 
@@ -31,10 +32,10 @@ const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 500");
+    const mediaQuery = window.matchMedia('(max-width: 500px)');
     setIsMobile(mediaQuery.matches);
     
-    const handleMediaQueryChange = (event) => { setIsMobile(event.matches) };
+    const handleMediaQueryChange = (event) => { setIsMobile(event.matches); };
     mediaQuery.addEventListener('change', handleMediaQueryChange);
     
     return () => {
@@ -55,11 +56,11 @@ const ComputersCanvas = () => {
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
-        <Computers isMobile={isMobile} />
+        { Computers(isMobile) }
       </Suspense>
       <Preload all />
     </Canvas>
   )
 }
 
-export default ComputersCanvas
+export default ComputersCanvas;
