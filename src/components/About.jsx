@@ -7,6 +7,7 @@ import { services } from "../constants";
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from "../hoComponent";
 
+// eslint-disable-next-line react/prop-types
 const ServiceCard = ({ index, title, icon }) => {
   return (
     <Tilt className="xs:w-[250px] w-full">
@@ -27,15 +28,7 @@ const ServiceCard = ({ index, title, icon }) => {
   );
 }
 
-ServiceCard.PropTypes = {
-  mainProp: PropTypes.shape({
-    index: PropTypes.number,
-    title: PropTypes.string,
-    src: PropTypes.string,
-  })
-};
-
-const About = () => {
+const BaseAbout = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -58,7 +51,8 @@ const About = () => {
         ))}
       </div>
     </>
-  )
+  );
 }
 
-export default SectionWrapper(About, "about");
+const About = SectionWrapper(BaseAbout, "about");
+export default About;

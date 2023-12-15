@@ -16,15 +16,14 @@ import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
-import redux from "./tech/redux.png";
-import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
+import cpp from "./tech/cpp.png";
+import postgres from "./tech/postgres.png";
+import python from "./tech/python.png";
+import ruby from "./tech/ruby.png";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import creativex from "./company/creativex.png";
+import cylab from "./company/cylab.png";
+import tora from "./company/tora.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -40,6 +39,8 @@ export {
   menu,
   close,
   css,
+  creativex,
+  cylab,
   docker,
   figma,
   git,
@@ -48,14 +49,11 @@ export {
   mongodb,
   nodejs,
   reactjs,
-  redux,
-  tailwind,
-  typescript,
-  threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
+  cpp,
+  postgres,
+  python,
+  ruby,
+  tora,
   carrent,
   jobit,
   tripguide,
