@@ -39,10 +39,10 @@ const BaseAbout = () => {
         variants={fadeIn("", "", 0.1, 0)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I&apos;m a full-stack software engineer with experience in Python, C++, Java, JavaScript, and Ruby.
+        I&apos;m a full-stack software engineer with programming experience in Python, C++, Java, JavaScript, and Ruby.
         My favorite frameworks are Django, React, and Ruby on Rails &#40;though I&apos;m always eager to learn new ones&#41;.
         I&apos;m interested in building scaleable web applications, interactive product features, and robust API&apos;s.
-        I&apos;m a lifelong learner and currently experimenting with language models in a solo-project &#40;details to come&#41;
+        I&apos;m a lifelong learner and currently experimenting with language models in a solo-project &#40;details to come&#41;.
         Feel free to reach out for networking, collaborating, or anything else!
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-10">

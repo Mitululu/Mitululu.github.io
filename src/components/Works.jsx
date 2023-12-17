@@ -61,7 +61,7 @@ const BaseWorks = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          The following projects showcase my technical skills and system design experience.
+          The following projects showcase my technical skills and system design experience. Click the icon links on the top right of each project for more details.
         </motion.p>
       </div>
       <div className="mt-20 flex flex-wrap gap-7">

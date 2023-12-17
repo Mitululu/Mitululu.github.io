@@ -7,10 +7,6 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoComponent";
 import { slideIn } from "../utils/motion";
 
-// email template id: template_kyjc1kl
-// service id: service_z02nnw7
-// public key: 9uAhwLTtgdjZNJZ2M
-
 const BaseContact = () => {
   const formRef = useRef();
   const [loading, setLoading] = useState(false);

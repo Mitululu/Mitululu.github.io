@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 
 import { styles } from "../styles";
+import { rotate } from "../assets";
 import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
@@ -20,6 +21,9 @@ const Hero = () => {
             I develop user-friendly software
           </p>
         </div>
+      </div>
+      <div className="absolute w-full flex justify-center items-center top-96">
+        <img src={rotate} alt="rotation icon" className="w-[50px] py-12 object-contain"/>
       </div>
       <ComputersCanvas />
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
