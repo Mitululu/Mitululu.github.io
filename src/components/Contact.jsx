@@ -16,9 +16,37 @@ const BaseContact = () => {
   const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({ name: "", email: "", message: "" });
 
-  const handleChange = (e) => {};
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value });
+  };
 
-  const handleSubmit = (e) => {};
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    emailjs.send(
+      "service_z02nnw7",
+      "template_kyjc1kl",
+      {
+        from_name: form.name,
+        to_name: 'Adrian',
+        from_email: form.email,
+        to_email: 'mituls@alumni.cmu.edu',
+        message: form.message,
+      },
+      "9uAhwLTtgdjZNJZ2M"
+    ).then(() => {
+      setLoading(false);
+
+      alert(`Thanks for your message ${form.name}! I will get back to you as soon as I can.`);
+    }, (error) => {
+      setLoading(false);
+      console.log(error);
+      
+      alert("An error occurred and the message could not be sent...\nPlease email me directly at mituls@alumni.cmu.edu");
+    });
+  };
 
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
