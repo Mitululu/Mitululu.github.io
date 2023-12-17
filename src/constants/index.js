@@ -7,6 +7,7 @@ import {
     html,
     css,
     creativex,
+    cmu,
     cylab,
     reactjs,
     nodejs,
@@ -15,9 +16,7 @@ import {
     figma,
     docker,
     tora,
-    carrent,
-    jobit,
-    tripguide,
+    lbsystem,
     cpp,
     postgres,
     python,
@@ -130,6 +129,21 @@ import {
       ],
     },
     {
+      title: "B.S. in Computer Engineering",
+      company_name: "Carnegie Mellon University",
+      icon: cmu,
+      iconBg: "#E6DEDD",
+      date: "Graduated May 2022",
+      edu: true,
+      points: [
+        "Intro to Computer Systems: intro to computer fundamentals such as assembly logic and multi-threading in the C language",
+        "Intro to Machine Learning: grad-level course on current ML theory and popular models with Python projects",
+        "Computer Graphics: grad-level course on graphics domains such as aliasing, meshing, and ray-tracing with C++ projects",
+        "Natural Language Processing: grad-level course on NLP theory areas and prototyping projects in PyTorch",
+        "Web Application Development: grad-level course on MVC system design with a Twitter-clone project in Django",
+      ],
+    },
+    {
       title: "Computer Vision Research Assistant",
       company_name: "Carnegie Mellon CyLab",
       icon: cylab,
@@ -184,68 +198,26 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Dynamic Load Balancing Research",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Custom-built load balancing algorithms based on Multi-Armed Bandits online learning methods. Algorithms were tested on a video streaming server with large-scale user simulation.",
       tags: [
         {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "mongodb",
+          name: "NodeJS",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: carrent,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Job IT",
-      description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-      tags: [
-        {
-          name: "react",
+          name: "AWS-S3",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
+          name: "AWS-Cloudwatch",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
-    },
+      image: lbsystem,
+      source_code_link: "https://drive.google.com/file/d/1ANXL7NoDuuHMhrZlUbDcVuH-e1NBuoAY/view",
+    }
   ];
   
   export { services, technologies, experiences, testimonials, projects };

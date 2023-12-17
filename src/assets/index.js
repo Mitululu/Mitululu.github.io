@@ -22,12 +22,11 @@ import python from "./tech/python.png";
 import ruby from "./tech/ruby.png";
 
 import creativex from "./company/creativex.png";
+import cmu from "./company/cmu.png";
 import cylab from "./company/cylab.png";
 import tora from "./company/tora.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import lbsystem from "./lbsystem.png";
 
 export {
   logo,
@@ -40,6 +39,7 @@ export {
   close,
   css,
   creativex,
+  cmu,
   cylab,
   docker,
   figma,
@@ -54,7 +54,5 @@ export {
   python,
   ruby,
   tora,
-  carrent,
-  jobit,
-  tripguide,
+  lbsystem,
 };
