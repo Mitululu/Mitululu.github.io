@@ -136,11 +136,11 @@ import {
       date: "Graduated May 2022",
       edu: true,
       points: [
-        "Intro to Computer Systems: intro to computer fundamentals such as assembly logic and multi-threading in the C language",
-        "Intro to Machine Learning: grad-level course on current ML theory and popular models with Python projects",
-        "Computer Graphics: grad-level course on graphics domains such as aliasing, meshing, and ray-tracing with C++ projects",
-        "Natural Language Processing: grad-level course on NLP theory areas and prototyping projects in PyTorch",
-        "Web Application Development: grad-level course on MVC system design with a Twitter-clone project in Django",
+        "Intro to Computer Systems",
+        "Intro to Machine Learning",
+        "Computer Graphics",
+        "Natural Language Processing",
+        "Web Application Development",
       ],
     },
     {
