@@ -20,10 +20,10 @@ const Hero = () => {
             Welcome to my website! <br />
             I develop user-friendly software
           </p>
+          <div className="absolute w-full flex justify-center items-center">
+            <img src={rotate} alt="rotation icon" className="w-[50px] py-12 object-contain"/>
+          </div>
         </div>
-      </div>
-      <div className="absolute w-full flex justify-center items-center top-96">
-        <img src={rotate} alt="rotation icon" className="w-[50px] py-12 object-contain"/>
       </div>
       <ComputersCanvas />
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
