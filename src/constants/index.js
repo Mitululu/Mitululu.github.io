@@ -5,7 +5,7 @@ import {
     web,
     javascript,
     html,
-    css,
+    // css,
     creativex,
     cmu,
     cylab,
@@ -62,10 +62,10 @@ import {
       name: "HTML 5",
       icon: html,
     },
-    {
-      name: "CSS 3",
-      icon: css,
-    },
+    // {
+    //   name: "CSS 3",
+    //   icon: css,
+    // },
     {
       name: "JavaScript",
       icon: javascript,

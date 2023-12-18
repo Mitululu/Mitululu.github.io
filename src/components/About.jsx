@@ -1,10 +1,11 @@
-import PropTypes from 'prop-types';
 import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
 
 import { styles } from "../styles";
 import { services } from "../constants";
 import { fadeIn, textVariant } from '../utils/motion';
+import { slideIn } from "../utils/motion";
+import { ProfileCanvas } from "./canvas";
 import { SectionWrapper } from "../hoComponent";
 
 // eslint-disable-next-line react/prop-types
@@ -45,6 +46,12 @@ const BaseAbout = () => {
         I&apos;m a lifelong learner and currently experimenting with language models in a solo-project &#40;details to come&#41;.
         Feel free to reach out for networking, collaborating, or anything else!
       </motion.p>
+      <motion.div
+        variants={slideIn("right", "tween", 0.2, 1)}
+        className="xl:flex-1  xl:h-[800px] md:h-[550px] h-[350px]"
+      >
+        <ProfileCanvas />
+      </motion.div>
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />

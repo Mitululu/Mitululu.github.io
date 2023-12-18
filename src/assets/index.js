@@ -8,6 +8,7 @@ import rotate from "./rotate.png"
 import finger from "./finger.png"
 import menu from "./menu.svg";
 import close from "./close.svg";
+import profile from "./profile.jpg";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -41,6 +42,7 @@ export {
   finger,
   menu,
   close,
+  profile,
   css,
   creativex,
   cmu,
